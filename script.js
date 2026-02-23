@@ -34,6 +34,7 @@ const list = document.getElementById("list");
 list.innerHTML = "";
 myLibrary.forEach(book => {
     const bookElement = document.createElement("div");
+    bookElement.className = "book";
     bookElement.innerHTML = `
         <h2>${book.title}</h2>
         <p>Author: ${book.author}</p>
@@ -85,4 +86,4 @@ document.getElementById("submit-book-btn").addEventListener("click", (e) => {
 //sample books to test the display function
 const book1 = addBookToLibrary("The Hobbit", "J.R.R Tolkien", "295", "not read yet");
 const book2 = addBookToLibrary("A Fancy Book Title", "Famous Author", "295", "not read yet");
-const book3 = addBookToLibrary("Another Thriller", "Thriller Writer", "295", "not read yet");
+const book3 = addBookToLibrary("A Sci-Fi Thriller", "Thriller Writer", "295", "not read yet");
